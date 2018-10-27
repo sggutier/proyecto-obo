@@ -1,5 +1,7 @@
 #+Title: Ordenador y Balanceador de Organizaciones
 
+[[https://github.com/sggutier/proyecto-obo/releases][Descargas]] |
+
 Aquí va el proyecto de la materia de Ingeniería de Software.
 
 Éste proyecto usa LaTeX.  [[Aquí hay un enlace para descargarlo ][Aquí hay un tutorial de cómo usarlo.]]
