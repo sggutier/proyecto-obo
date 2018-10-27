@@ -1,0 +1,110 @@
+\documentclass[12pt]{article}
+% \usepackage[T1]{fontenc}
+\usepackage[spanish]{babel}
+% \usepackage{natbib}
+\usepackage{url}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\graphicspath{{Pics/}}
+\usepackage{subfiles}
+\usepackage{float}
+\usepackage{sidecap}
+\usepackage{parskip}
+\usepackage{fmtcount} % equivalent to \usepackage[super]{nth}
+\usepackage{fancyhdr}
+\usepackage{vmargin}
+\usepackage{setspace}
+\usepackage[autostyle]{csquotes}
+
+\usepackage[
+backend=biber,
+style=apa,
+natbib=true,
+url=true, 
+doi=true,
+eprint=false
+]{biblatex}
+\DeclareLanguageMapping{spanish}{spanish-apa}
+% \addbibresource{biblatex-examples.bib}
+\addbibresource{biblist.bib}
+\setmarginsrb{3 cm}{2.5 cm}{3 cm}{2.5 cm}{1 cm}{1.5 cm}{1 cm}{1.5 cm}
+% \setmarginsrb{3 cm}{2.5 cm}{2.5 cm}{2.5 cm}{1 cm}{1.5 cm}{1 cm}{1.5 cm}
+
+\usepackage[]{hyperref}
+\hypersetup{
+  colorlinks=true,
+}
+
+
+\title{Ordenador y Balanceador de Organizaciones}
+\author{Saúl Germán Gutiérrez C.}
+\date{\today}
+
+\makeatletter
+\let\thetitle\@title
+\let\theauthor\@author
+\let\thedate\@date
+\makeatother
+
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{\theauthor}
+\lhead{\thetitle}
+\cfoot{\thepage}
+% \renewcommand{\baselinestretch}{1.5}
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+
+\begin{titlepage}
+  \centering
+  \vspace*{0.5 cm}
+  \includegraphics[scale = 0.6]{logo-sistemas}\\[1.0 cm]	% University Logo
+  \textsc{\LARGE Instituto Tecnológico Superior del Sur de Guanajuato}\\[2.0 cm]	% University Name
+  \textsc{\Large Fundamentos de Ingeniería de Software}\\[0.5 cm]				% Course Code
+  \rule{\linewidth}{0.2 mm} \\[0.4 cm]
+  { \huge \bfseries \thetitle}\\
+  \rule{\linewidth}{0.2 mm} \\[1.5 cm]
+  
+  \begin{minipage}{0.5\textwidth} % 0.4 originalmente
+    \begin{flushleft} \large
+      \emph{Profesor:}\\
+      Patricia Vega\\
+      \emph{Grupo:} \\
+      S54A \\
+      \emph{Fecha:} \\
+      \thedate     
+    \end{flushleft}
+  \end{minipage}~
+  \begin{minipage}{0.4\textwidth}
+
+    \begin{flushright} \large
+      \emph{Autores:} \\
+      % \theauthor \\
+      Gerardo López Carreño \\
+      Saúl Germán Gutiérrez C. \\
+      Edgar Ruben Tapia \\
+      Victoria Soto Lemus \\
+      Oscar Vega López\\
+    \end{flushright}
+    
+  \end{minipage}\\[2 cm]
+     
+\end{titlepage}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+
+% \tableofcontents
+\pagebreak
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+ 
+% \section{Introducción}
+% \subfile{./Capitulos/intro.tex}
+
+% \newpage
+\printbibliography
+
+\end{document}
