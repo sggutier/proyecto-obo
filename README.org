@@ -1,6 +1,6 @@
 #+Title: Ordenador y Balanceador de Organizaciones
 
-[[https://github.com/sggutier/proyecto-obo/releases][Descargas]] |
+[[https://github.com/sggutier/proyecto-obo/releases][Descargas (aquí se bajan los pdfs)]]
 
 Aquí va el proyecto de la materia de Ingeniería de Software.
 
