@@ -1,0 +1,70 @@
+En esta sección se tienen con más detalle los requerimientos específicos del sistema a desarrollar.
+
+\subsection{Interfaces externas}
+\begin{itemize}
+\item Contar con la librería .NET de Windows en su versión 2018.
+\item Contar con Windows 10 con sus últimas actualizaciones.
+\end{itemize}
+
+\subsection{Funciones}
+\begin{itemize}
+\item Sólo permitir el acceso por medio de autentificación del empleado.
+\item Permitir agregar, editar, consultar y eliminar registros de los inventarios.
+\item Asignar eventos a determinadas fechas para su posterior consulta.
+\item Consultar del estado de los empleados, así como su disposición.
+\item La asignación de empleados a trabajos o eventos.
+\item Solicitar confirmación del usuario cuando se desee editar o eliminar algún registro.
+\item Contar con la capacidad de realizar ventas.
+\end{itemize}
+
+\subsection{Requisitos de rendimiento}
+\begin{itemize}
+\item Capacidad de poder acceder a cualquier registro de la BD desde cualquier equipo conectado a la red.
+\item Soportar 10 usuarios conectados en paralelo.
+\item Soportar mínimo 5 modificaciones de la base de datos por segundo.
+\item Almacenamiento de más de mil registros por mes.
+\end{itemize}
+
+\subsection{Restricciones de diseño}
+\begin{itemize}
+\item Debido a la solicitud de la empresa Yuriria Foto el diseño debe de ser mayormente compuesto por el color azul.
+\item Todas las funciones del sistema deben ser mostradas únicamente en una ventana.
+\item Los botones deben ser fácilmente visibles y debe haber una separación entre ellos que minimice el riesgo de oprimir el equivocado por estar muy cerca de otro.
+\end{itemize}
+
+\subsection{Atributos del sistema}
+\begin{itemize}
+\item Para el acceso al sistema se deberá acceder por medio de una verificación que cuente con un usuario y una contraseña.
+\item Sólo el usuario administrador tiene permiso a eliminar o editar registros.
+\item Sólo el administrador puede crear registros de eventos y asignar a algún empleado a él.
+\end{itemize}
+
+\subsubsection{Fiabilidad}
+\begin{itemize}
+\item El sistema debe tener una interfaz de uso intuitiva y sencilla.
+\item La interfaz de usuario debe ajustarse a las características de resolución de los equipos, dentro de la cual estará incorporado el sistema de gestión de procesos y el inventario.
+\end{itemize}
+
+\subsubsection{Disponibilidad}
+
+La disponibilidad del sistema debe ser continua con un nivel de servicio para los usuarios de 7 días por 24 horas, contar con una contingencia, generación de alarmas. 
+
+
+\subsubsection{Portabilidad}
+
+El sistema será implantado con el uso de PHP y HTML5. 
+
+
+\subsubsection{Mantenibilidad}
+\begin{itemize}
+\item El sistema debe disponer de una documentación fácilmente actualizable que permita realizar operaciones de mantenimiento con el menor esfuerzo posible.
+\item La interfaz debe estar complementada con un buen sistema de ayuda (la administración puede recaer en personal con poca experiencia en el uso de aplicaciones informáticas). 
+\end{itemize}
+
+
+% \subsection{Otros requisitos}
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: "../srs"
+%%% End:
